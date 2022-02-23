@@ -1,14 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+</head>
+<body>
+  <!--Barra-->
+  <div class="riot-bar">
+    <div class="riot-left">
+      <div class="logo">
+        <img src="https://www.cisco.com/c/es_mx/about/case-studies-customer-success-stories/riot-games/jcr:content/Grid/category_atl/layout-category-atl/blade_1895754487/bladeContents/halves/H-Half-1/emphasis_copy/emphasisContents/image/image.img.png/1638279628240.png" alt="">
+      </div>
+    </div>
+    <div class="riot-center">
+      <div class="lol-box">
+        <div class="lol-icon">
+          <img src="https://www.onlinechampion.com/images/games/icons/256/league-of-legends.png" alt="">
+        </div>
+      </div>
+      <div class="riot-navigator">
+        <div class="opciones">
+          <div class="fake-buttons">
+            <p>Juego</p>
+          </div>
+          <div class="fake-buttons">
+            <p>Campeones</p>
+          </div>
+          <div class="fake-buttons">
+            <p>Noticias</p>
+          </div>
+          <div class="fake-buttons">
+            <p>Notas de la versión</p>
+          </div>
+          <div class="fake-buttons">
+            <p>Esports</p>
+          </div>
+          <div class="fake-buttons">
+            <p>Más</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="riot-right">
+      <div class="botón-idioma">
+        <img src="https://unisistemascenter.com/wp-content/uploads/2021/12/itworksperu.png" alt="">
+      </div>
+      <div class="iniciar-jugar">
+        <div class="iniciar">
+          <p class= "p1">INICIAR SESIÓN</p>
+        </div>
+        <div class="Jugar">
+          <p class=" p2">JUGAR AHORA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Título-->
+  <div class="caja-titulo">
+    <div class="imagen">
+      <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt37927f7aeba81182/61ef25b21e207a3729b8f07c/LOL_PROMOART_12.jpg" alt="">
+    </div>
+    <div class="titulo">
+      <h1>¡Crea tu propia tarjeta RP!</h1>
+      <h4>Solo necesitas asociarla con una tarjeta de crédito/debito ya existente y te enviaremos un link confirmando tu solicitud.</h4>
+    </div>
+  </div>
+  <!--Principal-->
+  <div class="principal">
+	<div class="contenedor">
+    <!--Tarjeta-->
+		<section class="tarjeta" id="tarjeta">
+         <div class="contenido">
+				<div class="logo-marca" id="logo-marca">
+				</div>
+				<img src="https://www.provendatarecovery.com/wp-content/uploads/2015/06/What-is-EMV-credit-card-technology.png" class="chip" alt="">
+				<div class="datos">
+					<div class="grupo" id="numero">
+						<p class="label">Número Tarjeta</p>
+						<p class="numero">0000 0000 0000 0000</p>
+					</div>
+					<div class="flexbox">
+						<div class="grupo" id="nombre">
+							<p class="label">Nombre Tarjeta</p>
+							<p class="nombre">Nombres Apellidos</p>
+						</div>
+					</div>
+				</div>
+         </div>
+		</section>
+	</div>
+    <!--Toma de datos-->
+    <form id="formulario-tarjeta" class="formulario-tarjeta">
+			<div class="grupo">
+				<label for="inputNumero">Número de Tarjeta</label>
+				<input type="text" id="inputNumero" maxlength="16">
+			</div>
+			<div class="grupo">
+				<label for="inputNombre">Nombres y Apellidos</label>
+				<input type="text" id="inputNombre">
+			</div>
+    </form>
+    </div>
+	<script src="index.js" type="module"></script>
+</body>
 </html>

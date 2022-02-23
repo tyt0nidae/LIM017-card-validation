@@ -1,0 +1,332 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(0, 9, 19);
+  font-family: sans-serif;
+}
+
+/*Riot bar*/
+.riot-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 32px;
+}
+.riot-bar {
+  background-color: #111;
+  border-bottom: 2px solid rgba(51,51,51,.25);
+  font-family: Arial,sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  height: 80px;
+  line-height: normal;
+  position: relative;
+  text-align: left;
+  display: flex;
+  width: 100%;
+  z-index: 3000000;
+}
+.riot-logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img{
+  height: 40px;
+  fill: #f9f9f9;
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+}
+.riot-center {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+}
+.lol-box {
+    height: 80px;
+    margin-left: 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.lol-icon img{
+  display: block;
+  max-height: 30px;
+}
+.riot-navigator {
+  opacity: 1;
+  margin-left: 18px;
+  transition: opacity ease .3s;
+  width: 100%;
+  height: 80px;
+}
+.opciones {
+  display: inline-flex;
+  position: relative;
+  height: 80px;
+}
+.fake-buttons {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  height: 66px;
+  color: #f9f9f9;
+  font-size: 13px;
+  letter-spacing: .08em;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 7.5px 16px;
+  text-align: center;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.fake-buttons :hover {
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 6.4px;
+  padding: 7.5px 16px;
+}
+.riot-right {
+  display: flex;
+  padding-right: 32px;
+}
+.botón-idioma {
+  position: relative;
+  height: 100%;
+  top: 0;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+.botón-idioma img{
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.iniciar-jugar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iniciar {
+  display: inline-block;
+  padding: 0 6px;
+  text-decoration: none;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+.p1 {
+  text-align: center;
+  line-height: 16px;
+  position: relative;
+  z-index: 0;
+  height: 32px;
+  border-radius: 6.4px;
+  padding: 8px 16px;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+.jugar {
+  display: inline-block;
+  padding: 0 6px;
+}
+.p2 {
+  text-align: center;
+  line-height: 16px;
+  position: relative;
+  z-index: 0;
+  text-overflow: ellipsis;
+  height: 32px;
+  border-radius: 12px;
+  padding: 8px 16px;
+  color: #111;
+  background: rgb(11, 196, 226);
+  cursor: pointer;
+}
+.p2:hover {
+  background: rgb(0, 178, 207);
+  cursor: pointer;
+}
+/*Título*/
+.caja-titulo{
+  color: rgb(255, 255, 255);
+  padding-bottom: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.imagen {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+.imagen img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imagen::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to top, rgb(0, 9, 19) 1%, rgba(0, 9, 19, 0) 100%);
+}
+.titulo {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 80px 60px;
+}
+h4 {
+  position: relative;
+  border: 1px solid rgb(36, 44, 54);
+  margin: 3.57143%;
+  padding: 3.57143%;
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.principal {
+  width: 100%;
+  position: relative;
+  top: -1130px;
+  z-index: 2;
+  align-items: center;
+  margin: auto;
+}
+/*tarjeta*/
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  padding: 40px 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tarjeta {
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  z-index: 6;
+  margin-bottom: 40px;
+}
+.tarjeta > div {
+  padding: 30px;
+  border-radius: 15px;
+  min-height: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 10px 0 #545151;
+}
+.tarjeta .contenido {
+	width: 100%;
+  background-size: cover;
+  background: url("https://i.blogs.es/d3fe17/portada-referencias-arcane-acto-1/1366_2000.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tarjeta .logo-marca {
+  text-align: right;
+  min-height: 50px;
+}
+.logo-marca img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 80px;
+}
+.chip {
+  width: 100%;
+  max-width: 70px;
+  margin-bottom: 20px;
+}
+.contenido .grupo .label {
+	font-size: 16px;
+	color: #A3A0A0 ;
+	margin-bottom: 5px;
+}
+.contenido .grupo .numero,
+.contenido .grupo .nombre {
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.contenido .flexbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/*Toma de datos*/
+.formulario-tarjeta {
+	background: white;
+	width: 100%;
+	max-width: 700px;
+	padding: 150px 30px 30px 30px;
+	border-radius: 10px;
+	position: relative;
+	top: -190px;
+	z-index: 5;
+  align-items: center;
+  margin: auto;
+}
+.formulario-tarjeta label {
+	display: block;
+	color: #7d8994;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+.formulario-tarjeta input{
+	border: 2px solid #CED6E0;
+	font-size: 18px;
+	height: 50px;
+	width: 100%;
+	padding: 5px 12px;
+	border-radius: 5px;
+}
+.formulario-tarjeta input:hover{
+	border: 2px solid #93BDED;
+}
+.formulario-tarjeta input:focus {
+	outline: rgb(4,4,4);
+	box-shadow: 1px 7px 10px -5px rgba(90,116,148,0.3);
+}
+.formulario-tarjeta input {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.formulario-tarjeta .btn-enviar {
+  border: none;
+  padding: 10px;
+  font-size: 22px;
+  color: #fff;
+  background: #2364d2;
+  box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4);
+  cursor: pointer;
+}
+.formulario-tarjeta .btn-enviar:hover {
+  background: #1850b1;
+}
